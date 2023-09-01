@@ -1,0 +1,38 @@
+body {
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+strong em {
+  color: red;
+}
+
+.apresentacao_principal {
+  background-color: silver;
+}
+
+.apresentacao_beneficios {
+  background-color: white;
+}
+
+.imagem_beneficios {
+  width: 50%;
+}
+
+.item {
+  font-style: italic;
+}
+
+#banner {
+  width: 100%;
+}
+
+#missao {
+  font-size: 20px;
+}
