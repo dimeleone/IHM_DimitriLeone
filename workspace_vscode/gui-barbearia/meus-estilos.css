@@ -5,6 +5,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 p {
   text-align: center;
 }
@@ -13,12 +17,19 @@ strong em {
   color: red;
 }
 
+ul {
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
 .apresentacao_principal {
   background-color: silver;
 }
 
 .apresentacao_beneficios {
-  background-color: white;
+  background: #FFFFFF;
+  padding: 20px;
 }
 
 .imagem_beneficios {
