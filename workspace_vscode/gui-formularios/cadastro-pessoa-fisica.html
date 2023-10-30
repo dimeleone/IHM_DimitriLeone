@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <label for="inNome">Primeiro nome:</label>
+    <input id="inNome" type="text" size="20">
+    <br>
+    <label for="inSobrenome">Sobrenome:</label>
+    <input id="inSobrenome" type="text" size="40">
+    <br>
+    <label>Estado Civil</label>
+    <br>
+    <input id="inEC1" name="eCivil" type="radio" value="solteiro">
+    <label for="inEC1">Solteiro</label>
+    <br>
+    <input id="inEC2" name="eCivil" type="radio" value="casado">
+    <label for="inEC2">Casado</label>
+    <br>
+    <input id="inEC3" name="eCivil" type="radio" value="divorciado">
+    <label for="inEC3">Divorciado</label>
+    <br>
+    <label>Habilidades:</label>
+    <br>
+    <input id="inHab1" name="hab1" type="checkbox" value="html">
+    <label for="inHab1">HTML</label>
+    <br>
+    <input id="inHab2" name="hab1" type="checkbox" value="css">
+    <label for="inHab2">CSS</label>
+    <br>
+    <input id="inHab3" name="hab1" type="checkbox" value="js">
+    <label for="inHab3">JavaScript</label>
+    <br>
+    <label for="inCarro">Carro:</label>
+    <select id="inCarro" name="carro">
+        <option value="volvo">Volvo</option>
+        <option value="ferrari">Ferrari</option>
+        <option value="mercedes" selected>Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br>
+    <label for="inEscol">Escolaridade:</label>
+    <select id="inEscol" name="escolaridade">
+        <option value="ensinomedio" disabled>Ensino Médio</option>
+        <option value="superior">Superior</option>
+        <option value="posgraduacao">Pós-Graduação</option>
+        <option value="mestrado" selected>Mestrado</option>
+        <option value="doutorado">Doutorado</option>
+    </select>
+    <br>
+    <button type="submit">Cadastrar</button>
+  </form>
+</body>
+</html>
