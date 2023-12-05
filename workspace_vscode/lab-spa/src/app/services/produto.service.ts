@@ -1,15 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { IProduto } from '../models/produto.model';
 import { Observable } from 'rxjs';
-import { IProduto } from 'src/app/models/produto.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProdutoService {
 
-  private readonly URI_PRODUTOS = "assets/exemplo-de-produtos.json";
-  //private readonly URI_PRODUTOS = "http://localhost:8081/produto";
+  private readonly URI_PRODUTOS = "http://localhost:8081/produto";
+  //private readonly URI_PRODUTOS = "assets/exemplo-de-produtos.json";
+
 
   constructor(private http: HttpClient) { }
 
