@@ -1,0 +1,42 @@
+<div class="container">
+  <h1>Formulário de Produto</h1>
+  <form [formGroup]="formulario">
+
+    <div class="mt-3">
+      <label  for="inDesc" class="form-label">Descrição</label>
+      <input type="text" id="inDesc" formControlName="descricao" class="form-control">
+      <div *ngIf="formulario.get('descricao')?.errors?.['required']">
+        <small class="text-danger">Descrição deve ser informada</small>
+      </div>
+      <div *ngIf="formulario.get('descricao')?.errors?.['minLenght']">
+        <small class="text-danger">Descrição deve ter tamanho mínimo de 5</small>
+      </div>
+    </div>
+
+    <div class="mt-3">
+      <label for="inPreco" class="form-label">Preço</label>
+      <input type="number" id="inPreco" formControlName="preco" class="form-control">
+      <div *ngIf="formulario.get('preco')?.errors?.['required']">
+        <small class="text-danger">Preço deve ser informado</small>
+      </div>
+    </div>
+
+    <button
+      (click)="onCadastrar()"
+      class="btn btn-primary"
+      >Cadastrar
+    </button>
+
+
+    <div class="d-flex justify-content-start mt-5">
+      <button class="btn btn-outline-primary rounded-start-5"
+      [routerLink]="['/produtotabela']"
+      >Cancelar e voltar</button>
+    </div>
+
+  </form>
+</div>
+
+
+
+

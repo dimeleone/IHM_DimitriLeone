@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ProdutoTabelaComponent } from './components/components/produto-tabela/produto-tabela.component';
 import { NotFoundComponent } from './components/components/not-found/not-found.component';
 import { HomeComponent } from './components/components/home/home.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { HomeComponent } from './components/components/home/home.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

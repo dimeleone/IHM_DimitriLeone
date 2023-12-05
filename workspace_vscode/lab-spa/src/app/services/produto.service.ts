@@ -17,4 +17,9 @@ export class ProdutoService {
   public findAll(): Observable<IProduto[]> {
     return this.http.get<IProduto[]>(this.URI_PRODUTOS);
   }
+
+  public create(produto: IProduto): Observable<IProduto> {
+    console.log(produto);
+    return this.http.post<IProduto>(this.URI_PRODUTOS, produto);
+  }
 }
